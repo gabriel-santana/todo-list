@@ -1,0 +1,78 @@
+.Headerlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-top: 4rem;
+}
+
+.ContainerCreated {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  font-weight: 700;
+}
+
+.ContainerCreated p {
+  color: var(--blue);
+
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.ContainerCreated p span {
+  gap: 0.625rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 62rem;
+
+  color: var(--gray-200);
+  background: var(--gray-400);
+
+  font-size: 0.75rem;
+}
+
+
+
+.ContainerFinished {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  font-weight: 700;
+}
+
+.ContainerFinished p {
+  color: var(--purple);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.ContainerFinished p span {
+  gap: 0.625rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 62rem;
+
+  color: var(--gray-200);
+  background: var(--gray-400);
+
+  font-size: 0.75rem;
+}
+
+
+
+.Contentlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  margin-top: 1.5rem;
+}
+
