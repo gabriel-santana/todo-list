@@ -12,9 +12,7 @@ export function List({ newItem }: ListProps) {
     id: uuidv4(),
     isChecked: false,
     description: 'Uma task de exemplo',
-  }])
-
-  const [finishedItems, setFinishedItems] = useState(0);
+  }])  
 
   const handleCheckOrUncheckItem = (id: string) => {
     const newItemsWithCheckUpdated = items.map(item => ({ ...item, isChecked: item.id === id ? !item.isChecked : item.isChecked }));
@@ -27,9 +25,7 @@ export function List({ newItem }: ListProps) {
     setItems(itemsWithoutDeletedItem)
   }
 
-  useEffect(() => {
-    setFinishedItems(items.filter(item => item.isChecked === true).length)
-  }, [items]);
+  const finishedItems = items.filter(item => item.isChecked === true).length
 
   useEffect(() => {
     if(newItem !== ''){
